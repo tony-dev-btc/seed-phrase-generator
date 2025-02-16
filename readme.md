@@ -28,8 +28,8 @@ The search speed is determined by your hardware, especially your graphics card. 
 
 ## My Finds
 
-I’ve personally recovered two BTC - wallets with a balance. The first had 0.000032 BTC,  the second contained 0.528 BTC (roughly $3800 at the time of discovery).  
-Here’s the link to the wallet: [View wallet](https://cutt.cx/BFQG2).
+I’ve personally recovered two BTC - wallets with a balance. The first had 0.000032 BTC,  the second contained 0.0528 BTC (roughly $4800 at the time of discovery).  
+Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](mempool.space/address/bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay).
 
 <p align="left">
     <img src="/assets/tocozu.webp" />
@@ -40,15 +40,17 @@ Here’s the link to the wallet: [View wallet](https://cutt.cx/BFQG2).
 - [Windows x64 version](../../releases)
 
 ## Building from Source
-
-1. Open the project file (`Wallet - Gen.sln`) in Visual Studio or any other compatible C++ compiler.
+1. Open the project file (`Wallet-Gen.sln`) in Visual Studio or any other compatible C++ compiler.
 2. Install the necessary dependencies and build the project.
 
 ### Installing vcpkg and libssl
 
 ```cmd
 > git clone https://github.com/microsoft/vcpkg
-> .\vcpkg\bootstrap-vcpkg.ba
+> .\vcpkg\bootstrap-vcpkg.bat
 > .\vcpkg\vcpkg integrate install
 > .\vcpkg\vcpkg install openssl:x64-windows
 ```
+
+## Contribute
+Contributions are welcome! If you have ideas, bug reports, or want to contribute to the codebase, feel free to submit a pull request.
