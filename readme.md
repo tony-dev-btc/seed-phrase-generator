@@ -59,3 +59,8 @@ Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](me
 
 ## Contribute
 Contributions are welcome! If you have ideas, bug reports, or want to contribute to the codebase, feel free to submit a pull request.
+
+## Donate
+**BTC:** bc1qeyrshy5ntsguwxe9m8tp2x2yqhddz7ymkj44h9
+
+**ETH:** 0x76c2E75B92Eb340f01B378e332FC7d8954893693
