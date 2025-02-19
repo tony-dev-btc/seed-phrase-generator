@@ -15,15 +15,22 @@ wallet generate_evm_wallet(const std::string& mnemonic) {
     return wal;
 }
 
-wallet generate_bitcoin_wallet(const std::string& mnemonic) {
+wallet generate_bitcoin_wallet(const std::string& mnemonic, int type) {
   
     std::vector<unsigned char> seed = mnemonic_to_seed(mnemonic);
-    std::string private_key = bytearray2hex(seed);
-    std::string public_key = keccak256(private_key);
-    std::vector<unsigned char> pubKey(public_key.begin(), public_key.end());
-    std::vector<unsigned char> sha256Hash = sha256(pubKey);
-    std::vector<unsigned char> ripemd160Hash = ripemd160(sha256Hash);
-    std::string address = bech32_encode(ripemd160Hash);
+    std::string private_key, public_key, address;
+
+    if(type == 0) {
+        private_key = bytearray2hex(seed);
+        public_key = keccak256(private_key);
+        std::vector<unsigned char> pubKey(public_key.begin(), public_key.end());
+        std::vector<unsigned char> sha256Hash = sha256(pubKey);
+        std::vector<unsigned char> ripemd160Hash = ripemd160(sha256Hash);
+        address = bech32_encode(ripemd160Hash);
+    }
+    else if(type == 1) {
+        // TODO
+    }
 
     wallet wal;
     wal.address = address;
