@@ -10,4 +10,4 @@ struct wallet {
 };
 
 wallet generate_evm_wallet(const std::string& mnemonic);
-wallet generate_bitcoin_wallet(const std::string& mnemonic);
+wallet generate_bitcoin_wallet(const std::string& mnemonic, int type = 0);
