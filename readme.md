@@ -1,4 +1,4 @@
-# Wallet - Gen
+# Seed Phrase Generator - WalletGen
 
 **Wallet - Gen** is a tool designed for generating cryptocurrency wallets (such as Bitcoin and EVM-based wallets like ETH, BNB, MATIC, etc.), as well as discovering forgotten or lost - wallets that contain an existing balance.
 
