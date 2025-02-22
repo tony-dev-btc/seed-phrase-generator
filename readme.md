@@ -1,6 +1,6 @@
 # Seed Phrase Generator - WalletGen
 
-**Wallet - Gen** is a tool designed for generating cryptocurrency wallets (such as Bitcoin and EVM-based wallets like ETH, BNB, MATIC, etc.), as well as discovering forgotten or lost - wallets that contain an existing balance.
+**Wallet-Gen** is a tool designed for bruteforce and generating cryptocurrency wallets (such as Bitcoin and EVM-based wallets like ETH, BNB, MATIC, etc.), as well as discovering forgotten or lost - wallets that contain an existing balance.
 
 <p align="left">
     <img src="/assets/gonalva.webp" />
@@ -36,10 +36,10 @@ Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](me
 </p>
 
 ## Download
+- [Windows x64](../../releases)
+- [Linux](../../releases)
 
-- [Windows x64 version](../../releases)
-
-## Building from Source
+## Build
 1. Open the project file (`Wallet-Gen.sln`) in Visual Studio or any other compatible C++ compiler.
 2. Install the necessary dependencies and build the project.
 
@@ -58,6 +58,9 @@ Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](me
 
 ## Contribute
 Contributions are welcome! If you have ideas, bug reports, or want to contribute to the codebase, feel free to submit a pull request.
+
+## License
+This project is licensed under the [Apache 2.0 License](/LICENSE)
 
 ## Donate
 **BTC:** bc1qeyrshy5ntsguwxe9m8tp2x2yqhddz7ymkj44h9
