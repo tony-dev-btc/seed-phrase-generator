@@ -54,8 +54,7 @@ Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](me
 
 ## Todo
 1. Сreate a version of the program for Linux.
-2. Add search for new types of wallets (TRON, LTC, BCH).
-3. Search for missing words in a seed phrase.
+2. Search for missing words in a seed phrase.
 
 ## Contribute
 Contributions are welcome! If you have ideas, bug reports, or want to contribute to the codebase, feel free to submit a pull request.
