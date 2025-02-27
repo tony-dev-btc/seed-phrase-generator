@@ -5,7 +5,7 @@
 #include <vector>
 
 #include <Windows.h>
-#include <Winineti.h>
+#include <Wininet.h>
 #include <WinSock2.h>
 
 #include <json/json.h>
@@ -47,7 +47,7 @@ private:
 };
 
 
-namespace binance_api {
+namespace coingecko_api {
     float get_btc_udst_price();
     float get_eth_usdt_price();
     float get_bnb_usdt_price();
