@@ -188,7 +188,7 @@ void start_search_btc_wallets()
         MessageBoxA(GetConsoleWindow(), "Failed to initialize checker. check your internet connection", "Message", MB_ICONERROR);
         return;
     }
-    if (binance_api::get_btc_udst_price() == 0.0f) {
+    if (coingecko_api::get_btc_udst_price() == 0.0f) {
         MessageBoxA(GetConsoleWindow(), "Failed to connect to the Binance API", "Message", MB_ICONWARNING);
     }
 
@@ -205,7 +205,7 @@ void start_search_btc_wallets()
 
         if (wal_data.btc_amount > 0) {
             save_wallet_data(wal, wal_data, WAL_TYPE_BTC);
-            found_balance += wal_data.btc_amount * binance_api::get_btc_udst_price();
+            found_balance += wal_data.btc_amount * coingecko_api::get_btc_udst_price();
         }
         if (time(0) - speed_check > 1) {
             speed = mnemonics_by_sec;
@@ -231,7 +231,7 @@ void start_search_evm_wallets()
         MessageBoxA(GetConsoleWindow(), "Failed to initialize checker. check your internet connection", "Message", MB_ICONERROR);
         return;
     }
-    if (binance_api::get_btc_udst_price() == 0.0f) {
+    if (coingecko_api::get_btc_udst_price() == 0.0f) {
         MessageBoxA(GetConsoleWindow(), "Failed to connect to the Binance API", "Message", MB_ICONWARNING);
     }
 
@@ -253,8 +253,8 @@ void start_search_evm_wallets()
         else {
             std::cout << "(with balance)\n";
             save_wallet_data(wal, wal_data, WAL_TYPE_BTC);
-            found_balance += (wal_data.eth_amount * binance_api::get_eth_usdt_price()) + (wal_data.bnb_amount * binance_api::get_bnb_usdt_price()) +
-                (wal_data.matic_amount * binance_api::get_matic_usdt_price());
+            found_balance += (wal_data.eth_amount * coingecko_api::get_eth_usdt_price()) + (wal_data.bnb_amount * coingecko_api::get_bnb_usdt_price()) +
+                (wal_data.matic_amount * coingecko_api::get_matic_usdt_price());
         }
 
         if (time(0) - speed_check > 1) {
