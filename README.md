@@ -18,7 +18,9 @@ For generating - EVM wallets (ETH, BNB, MATIC, etc.), Wallet - Gen uses the kecc
 - Search for - Bitcoin wallets with a balance.
 - Search for - EVM wallets with a balance.
 
-![video gif](/assets/fettnannhalf.gif)
+<p align="left">
+    <img src="/assets/fettnannhalf.gif" />
+</p>
 
 # Searching for Crypto Wallets
 
