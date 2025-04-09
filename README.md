@@ -54,7 +54,7 @@ After a week of non-stop wallet searching, I finally found a [wallet](mempool.sp
 
 ## Building the Project
 
-1. Open the project file (`WalletGen.sln`) in Visual Studio or any other compatible C++ compiler.
+1. Open the project file (`CryptoWalletGen.sln`) in Visual Studio or any other compatible C++ compiler.
 2. Install the necessary dependencies and build the project.
 
 ```cmd
