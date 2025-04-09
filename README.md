@@ -1,51 +1,61 @@
 # Seed Phrase Generator - WalletGen
 
-**Wallet-Gen** is a tool designed for brute force and generating cryptocurrency wallets (such as Bitcoin and EVM-based wallets like ETH, BNB, MATIC, etc.), as well as discovering forgotten or lost - wallets that contain an existing balance.
+**Wallet Gen** is a tool designed for brute force and generating cryptocurrency wallets (such as Bitcoin and EVM-based wallets like ETH, BNB, MATIC, etc.), as well as discovering forgotten or lost wallets that contain an existing balance.
 
-<p align="left">
-    <img src="/assets/gonalva.webp" />
+<p align="center">
+    <img width="820" height="460" src="/assets/gonalva.webp" />
 </p>
 
 ## Overview
 
-Wallet - Gen is built in C++ and is open-source, allowing anyone to access and modify the code. Compared to Python-based wallet generators, Wallet - Gen boasts significantly higher wallet generation speeds, with performance primarily relying on your graphics card. 
-For generating - EVM wallets (ETH, BNB, MATIC, etc.), Wallet - Gen uses the keccak256 algorithm, while Bitcoin - wallets are created using the Segwit format under Bech32.
+Wallet Gen is built in C++ and is open-source, allowing anyone to access and modify the code. Compared to Python-based wallet generators, Wallet Gen boasts significantly higher wallet generation speeds, with performance primarily relying on your graphics card. 
+For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak256 algorithm, while Bitcoin wallets are created using the Segwit format under Bech32.
 
 ## Features
 
-- Generate - a single Bitcoin wallet.
-- Generate - a single EVM wallet (ETH, BNB, MATIC, etc.).
-- Search for - Bitcoin wallets with a balance.
-- Search for - EVM wallets with a balance.
+- Generate a single Bitcoin wallet.
+- Generate a single EVM wallet (ETH, BNB, MATIC, etc.).
+- Search for Bitcoin wallets with a balance.
+- Search for EVM wallets with a balance.
 
 <p align="center">
-    <img width="1000" src="/assets/fettnannhalf.gif" />
+    <img width="820" height="460" src="/assets/fettnannhalf.gif" />
 </p>
 
 # Searching for Crypto Wallets
 
-Wallet - Gen allows you to search using brute force method for two types of crypto wallets with an existing balance. To search for BTC wallets, press key `3` in the menu or run `start_search_btc.bat`. For searching EVM wallets (such as Ethereum, BNB, etc.), press key `4` in the menu or run `start_search_evm.bat`. 
+Wallet Gen allows you to search using brute force method for two types of crypto wallets with an existing balance. To search for BTC wallets, press key `3` in the menu or run `start_search_btc.bat`. For searching EVM wallets (such as Ethereum, BNB, etc.), press key `4` in the menu or run `start_search_evm.bat`. 
 
 The search speed is determined by your hardware, especially your graphics card. To increase your chances of finding a wallet with a balance, you can run multiple instances of the program, from 1 to 4 or more, depending on the power of your graphics card.
-
-## My Finds
-
-I’ve personally recovered two BTC - wallets with a balance. The first had 0.000032 BTC,  the second contained 0.0528 BTC (roughly $4800 at the time of discovery).  
-Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](mempool.space/address/bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay).
-
-<p align="left">
-    <img src="/assets/tocozu.webp" />
-</p>
 
 ## Download
 - [Windows x64](../../releases)
 - [Linux](../../releases)
 
-## Build
-1. Open the project file (`Wallet-Gen.sln`) in Visual Studio or any other compatible C++ compiler.
-2. Install the necessary dependencies and build the project.
 
-### Installing vcpkg and libssl
+## My Finds
+
+I’ve personally recovered two BTC wallets with a balance. The first had 0.000032 BTC, the second contained 0.0528 BTC (roughly $4800 at the time of discovery).  
+Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](mempool.space/address/bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay).
+
+<p align="center">
+    <img width="820" height="460" src="/assets/tocozu.webp" />
+</p>
+
+
+
+### New Find 4/9/2025
+After a week of non-stop wallet searching, I finally found a [wallet](mempool.space/address/bc1q29c5m3w4jxtsj4vcd2ccw4t68xm8m7vs5vytu0) with 0.25 bitcoin ($19k). This is my 4th and biggest find of all time.
+
+<p align="center">
+    <img width="820" height="460" src="https://github.com/user-attachments/assets/57f95d59-9da2-44f0-8f66-dbbe7fe69aee" />
+</p>
+
+
+## Building the Project
+
+1. Open the project file (`WalletGen.sln`) in Visual Studio or any other compatible C++ compiler.
+2. Install the necessary dependencies and build the project.
 
 ```cmd
 > git clone https://github.com/microsoft/vcpkg
@@ -53,6 +63,10 @@ Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](me
 > .\vcpkg\vcpkg integrate install
 > .\vcpkg\vcpkg install openssl:x64-windows
 ```
+
+3. Start building the project.
+
+
 
 ## Todo
 1. Search for missing words in a seed phrase.
